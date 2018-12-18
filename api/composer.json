@@ -1,0 +1,28 @@
+{
+  "name": "Small-Social-Network",
+  "description": "Small social network",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Igor Arshinov",
+      "email": "IgorArshinov@hotmail.com"
+    }
+  ],
+  "require": {
+    "altorouter/altorouter": "v1.2.0",
+    "php-kit/ext-pdo": "1.1.3",
+    "phpunit/phpunit": "^6",
+    "squizlabs/php_codesniffer": "*",
+    "phpmd/phpmd": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "config\\": "src/config/",
+      "controllers\\": "src/controllers/",
+      "libraries\\": "src/libraries/",
+      "models\\": "src/models/",
+      "views\\": "src/views/"
+    }
+  }
+}

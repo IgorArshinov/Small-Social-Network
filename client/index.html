@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Small-social-network</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css"
+          media="screen,projection"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="module">
+        import 'node_modules/@polymer/paper-button/paper-button.js';
+        import 'node_modules/@polymer/paper-input/paper-input.js';
+    </script>
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Small Social Network</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="#">Messages</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">textsms</i>
+            <input id="messageText" type="text">
+            <label for="messageText">Message</label>
+            <button id="buttonAddMessage" class="col s1 offset-s11 waves-effect waves-light btn">Create</button>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">fingerprint</i>
+            <input id="messageId" type="text">
+            <label for="messageId">Message ID</label>
+            <button id="buttonGetMessageById" class="col s1 offset-s11 waves-effect waves-light btn">Get</button>
+        </div>
+    </div>
+    <hr/>
+    <h5 class="center-align">Get All Messages</h5>
+    <div class="row">
+        <button id="buttonGetMessages" class="col s2 offset-s5 waves-effect waves-light btn-large">Get All</button>
+    </div>
+    <hr/>
+    <h5>Output</h5>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Message</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody id="outputMessages">
+        </tbody>
+    </table>
+    <hr/>
+    <h5>Error Output</h5>
+    <table>
+        <tbody id="outputError">
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.js"></script>
+<script src="./public/js/bundle.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+
+  RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+     RewriteRule (.*) client/$1 [L]
+     RewriteRule ^$ client/$1 [L]
+#  RewriteRule ^$ client/ [L]
+#  RewriteRule (.*) client/$1 [L]
+
+</IfModule>

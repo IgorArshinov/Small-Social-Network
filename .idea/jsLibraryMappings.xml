@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <excludedPredefinedLibrary name="small-social-network/small-social-network-2/client/node_modules" />
+    <excludedPredefinedLibrary name="small-social-network/small-social-network/client/node_modules" />
+  </component>
+</project>
